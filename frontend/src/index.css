@@ -1,0 +1,46 @@
+/* Simplified CSS for Bootstrap compatibility */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+.card {
+  border-radius: 0.75rem;
+}
+
+.btn {
+  border-radius: 0.5rem;
+}
+
+.navbar {
+  margin-bottom: 2rem;
+}
+
+.post-content {
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.avatar-placeholder {
+  font-weight: bold;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.modal.show.d-block {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Substantial title truncation utility */
+.truncate-title {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
